@@ -1,0 +1,20 @@
+{
+  "name": "shared-integrations",
+  "version": "1.0.0",
+  "description": "Monorepo for reusable Stripe, SendGrid, and Supabase integrations",
+  "private": true,
+  "workspaces": [
+    "packages/stripe",
+    "packages/sendgrid",
+    "packages/supabase",
+    "packages/scheduler"
+  ],
+  "scripts": {
+    "install-all": "yarn install",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
